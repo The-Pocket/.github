@@ -17,5 +17,4 @@
     
 - ✨ Together, **Pocket Flow** and **Pocket AI** offer a platform for prototyping, refining, and deploying AI systems.
 
-
-View the full essay [here](https://github.com/The-Pocket/.github/blob/main/profile/essay.md).
+- 👉 View the full essay [here](https://github.com/The-Pocket/.github/blob/main/profile/essay.md).
