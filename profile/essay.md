@@ -4,7 +4,7 @@
   <img src="./pocket.png"/>
 </div>
 
-# Enterprises and AI Automation
+## AI Systems for Enterprises Automation
 
 Enterprises often deal with repetitive tasks like data entry, routine reporting, and invoice processing—activities that are both time-consuming and expensive. While large language models (LLMs) demonstrate [impressive intelligence for automation](https://arxiv.org/abs/2303.12712), a single LLM call isn’t enough to handle these complex tasks reliably. [**Compound AI systems**](https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/) integrate multiple LLM calls with external APIs to address these challenges. They are now used across industries to streamline automation and improve decision-making.
 
