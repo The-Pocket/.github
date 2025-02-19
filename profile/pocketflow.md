@@ -91,7 +91,7 @@ Another key design choice is how to represent the graph (nodes + edges). *LangGr
 
 ## Communication Models
 
-Existing frameworks let compute units communicate majorly via *message passing*, some also maintain a global context as a back door. In contrast, **PocketFlow uses solely a shared store as the communication model**, where each node reads and writes to the shared store. This design choice of shared store is for **separation of concerns**: (1) **Data Schema** is designed and maintained in a central place. (2) **Compute logic** is then operated on the designed data structure.
+Existing frameworks let compute units communicate majorly via *message passing*, though some also maintain a global context as a fallback. In contrast, **PocketFlow uses solely a shared store as the communication model**, where each node reads and writes to the shared store. This design choice of shared store is for **separation of concerns**: (1) **Data Schema** is designed and maintained in a central place. (2) **Compute logic** is then operated on the designed data structure.
 
 While *message passing* can be simple for smaller systems, it becomes cumbersome to maintain with many interacting components. A *shared store* allows developers to modify data structures freely, without refactoring communication patterns among nodes.
 
