@@ -11,7 +11,7 @@
 
 - 🔮 Introducing **The Pocket**, a Human-AI Co-Design platform for building AI systems. It has two core components:
 
-    - 🏭 **[Pocket Flow](https://github.com/The-Pocket/PocketFlow)**: a 100-line vendor-agnostic framework. Despite its minimalism, it supports widely adopted AI patterns: batched workflows, multi agents, and retrieval-augmented generation.
+    - 🏭 **[Pocket Flow](./pocketflow.md)**: a 100-line vendor-agnostic framework. Despite its minimalism, it supports widely adopted AI patterns: batched workflows, multi agents, and retrieval-augmented generation.
     
     - 🤖 **Pocket AI**: an assistant trained in best system design practices, can integrate domain-specific logic and external APIs through an enterprise knowledge base.
     
