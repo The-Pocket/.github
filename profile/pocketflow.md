@@ -1,5 +1,7 @@
 <h1 align="center">Pocket Flow - Minimalist LLM Framework in 100 Lines</h1>
 
+> Pocket Flow is Open Sourced at https://github.com/The-Pocket/PocketFlow
+
 Table 1 compares PocketFlow to existing frameworks. The primary design choices are:
 
 1. **Graph-based computation model:** PocketFlow does not adopt an *agent* oriented architecture.
