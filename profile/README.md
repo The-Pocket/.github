@@ -11,7 +11,7 @@
   
 - 🫠 Yet, current AI assistants are overwhelmed by **large, complex frameworks**.
 
-- 🔮 Introducing  [**Pocket Flow**](./https://github.com/The-Pocket/PocketFlow): a minimal, 100-line framework supporting core AI patterns—batched workflows, multi-agent orchestration, and retrieval-augmented generation—so AI assistants can build on it with ease.
+- 🔮 Introducing  [**Pocket Flow**](https://github.com/The-Pocket/PocketFlow): a minimal, 100-line framework supporting core AI patterns—batched workflows, multi-agent orchestration, and retrieval-augmented generation—so AI assistants can build on it with ease.
     
     
 
