@@ -1,9 +1,6 @@
-<h1 align="center">The Pocket - Human-AI Co-Design for AI Systems</h1>
-
 <div align="center">
-  <img src="./pocket.png"/>
+  <img src="https://github.com/The-Pocket/PocketFlow/blob/main/assets/title.png?raw=true" width="600"/>
 </div>
-
 
 - 🧙 **AI systems**—where multiple AI components work together to solve complex tasks—are crucial for enterprise automation.
   
