@@ -99,4 +99,4 @@ While *message passing* can be simple for smaller systems, it becomes cumbersome
 
 PocketFlow does not include modules that target particular vendors or use cases. While this may seem to forgo certain benefits of *information hiding*, it keeps the framework *minimal* and avoids shifting dependencies. Modern LLM systems often require integrating various APIs (for LLM calls or tool usage), which are challenging to maintain in a single framework.
 
-From our perspective, the job of handling vendor-specific details is best left to AI assistants that can retrieve up-to-date documentation and assemble relevant code on the fly. **PocketFlow remains a lightweight core, while an AI assistant—like Pocket AI—provides tailored integrations for specific business or application needs.**
+From our perspective, the job of handling vendor-specific details is best left to AI assistants that can retrieve up-to-date documentation and assemble relevant code on the fly. **PocketFlow remains a lightweight core, while an AI assistant—like Cursor AI—provides tailored integrations for specific business or application needs.**
