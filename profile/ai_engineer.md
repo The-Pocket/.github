@@ -1,4 +1,4 @@
-<h1 align="center">Pocket AI - Designing Systems, Not Just Writing Code</h1>
+<h1 align="center">AI Software Engineer - Designing Systems, Not Just Writing Code</h1>
 
 *(This essay is in progress)*
 
