@@ -4,46 +4,45 @@
 
 I created a video tutorial demonstrating how I used Cursor AI to "vibe code" an AI Paul Graham: https://youtu.be/wc9O-9mcObc
 
-## What's Vibe Code?
+## What's Vibe Coding?
 
-Vibe coding is a term coined by [Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383). It's a programming practice in which humans specify what to build, and an AI (e.g., Cursor) handles low-level implementation. This approach can make development more than ten times as productive.
+It's a term coined by [Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383). It's a programming practice where humans specify what to build, and an AI (like Cursor) handles the low-level implementation. This approach >10x development productivity.
 
-Since the release of Cursor, I’ve become a big fan of code automation, especially for building AI agents. However, it didn't work well previously. The main issue wasn't Cursor but rather the LLM framework.
+Since Cursor's release, I've become a big fan of code automation, especially for building AI agents. However, previously it didn't work well. The main issue wasn't Cursor but rather the LLM framework.
 
 ## Issues with the Current Framework
 
-- 1. **Vendor Wrapper Overload**
-    - *❤️ Ideally*: Provide an all-in-one toolbox so developers just states what they need, and everything is provided.
-    - *💔 In Reality*: Large package sizes (100–200 MB), massive codebases (10K–400K lines), installation dependency issues for packages aren’t even needed, and vendor lock-in.
+1. **Vendor Wrapper Overload**
+    - *❤️ Ideally*: Provide an all-in-one toolbox so developers just state what they need, and everything is provided.
+    - *💔 In Reality*: Large package sizes (100–200 MB), massive codebases (10K–400K lines), installation dependency issues with unnecessary packages, and vendor lock-in.
 
 2. **Application Wrappers Confusion**
-    - *❤️ Ideally*: Provide application wrappers for common use cases, so it’s easy for developers to get started quickly.
-    - *💔 In Reality*: Overlapping wrappers, outdated or incomplete documentation, and deprecation all lead to confusion.
+    - *❤️ Ideally*: Provide application wrappers for common use cases, making it easy for developers to get started quickly.
+    - *💔 In Reality*: Overlapping wrappers, outdated or incomplete documentation, and frequent deprecations, leading to confusion.
 
-These not only confuse humans but aslo Cursor. As a result, it attempts to call nonexisting functions, and eventually gives up on the framework.
+These issues confuse not only humans but also Cursor. As a result, it attempts to call non-existing functions and eventually gives up on the framework.
 
-## What about no framework?
+## What About No Framework?
 
-Ironically, using no framework often works better in terms of producing functional code. However, it becomes a **maintenance nightmare**:
+Ironically, using no framework often produces more functional code initially but quickly becomes a **maintenance nightmare**:
 
-- When you ask Cursor AI to implement something, it tries to finish using the most convenient way as possible, without understanding existing functions and modules. As a result, they create a lot of **ad hoc** and **one-shot** codes.
-- As projects grow, the codebase becomes highly confusing. You end up spending about 10% of your time vibe coding and 90% vibe debugging.
-
+- When you ask Cursor AI to implement something, it attempts to finish the task in the most convenient way possible, without fully understanding existing functions and modules. This results in lots of **ad hoc** and **one-shot** code.
+- As projects grow, the codebase becomes increasingly confusing. You end up spending about 10% of your time vibe coding and 90% vibe debugging.
 
 ## How Does My 100-Line Framework Help?
 
-Consider my framework as **LangGraph** but with only the core graph abstraction—no vendor-specific or application-level logic.
+Consider my [100-line LLM framework](https://github.com/The-Pocket/PocketFlow) as **LangGraph** but with only the core graph abstraction—no vendor-specific or application-level logic.
 
-- **Why a Graph?** I've found that graph abstraction (1) is extremely expressive for all kinds of designs (e.g., agents, retrieval-augmented generation, workflows, etc.) and (2) enforces excellent modularity. The result is that the "vibed codes" by Cursor is easy to maintain.
+- **Why a Graph?** I've found that the graph abstraction (1) is extremely expressive for various designs (e.g., ([multi-](https://the-pocket.github.io/PocketFlow/design_pattern/multi_agent.html))[agents](https://the-pocket.github.io/PocketFlow/design_pattern/agent.html), [Retrieval-Augmented Generation (RAG)](https://the-pocket.github.io/PocketFlow/design_pattern/rag.html), [workflow](https://the-pocket.github.io/PocketFlow/design_pattern/workflow.html), etc.) and (2) enforces excellent [modularity](https://the-pocket.github.io/PocketFlow/core_abstraction/node.html). Consequently, Cursor's "vibed code" is easy to maintain.
 
 - **What about vendor-specific or application-level logic?**
-  I've moved that logic into documentation that I provide to Cursor as `cursorrule`. Cursor can use these rules during in-context learning to adapt to new applications, while the core framework remains minimal.
+  I've moved that logic into [documentation](https://the-pocket.github.io/PocketFlow/) provided to Cursor as [`cursorrules`](https://github.com/The-Pocket/PocketFlow/blob/main/.cursorrules). Cursor uses these rules during in-context learning to adapt to new applications, keeping the core framework minimal.
 
-- **The Result? Great Vibes!** Cursor AI (or any LLM tool) can quickly grasp the 100 lines of framework code and adapt them to meet various application requirements. The code is also modular and maintainable. It's hard to pass the vibe through words but check out my Video Walkthrough.
+- **The Result? Great Vibes!** Cursor AI (or any LLM tool) quickly grasps the 100 lines of framework code and adapts it to various application requirements. The resulting code is modular and maintainable. It's hard to capture the vibe through words alone, so check out my [Video Walkthrough](https://youtu.be/wc9O-9mcObc).
 
 ## Future of Vibe Coding
- 
- - **Design Your Project Structure for Modularity and Testability**: One reason I love the graph approach is that it provides modularity by default. Cursor AI can build individual nodes, and if something goes wrong, you can isolate the problem to the right node without affecting everything else. You can let Cursor AI implement a node, test it, and proceed in small steps.
 
-- **System Design Outranks Coding**: This aligns with standard software engineering career ladders, where junior engineers handle coding and senior engineers focus on design architecture. Cursor can automates most loew-level coding, and human's focus should be on the more high level designs in a way that are easy to implement.
+- **Design Your Project Structure for Modularity and Testability**: One reason I love the graph approach is its built-in modularity. Cursor AI can build individual nodes, allowing easy isolation and troubleshooting of problems. You can let Cursor AI implement a node, test it independently, and proceed in manageable steps.
+
+- **System Design Outranks Coding**: This aligns with standard software engineering career progression, where junior engineers handle coding, and senior engineers focus on architectural design. Cursor can automate most low-level coding, but humans should focus on high-level designs to make sure are easy to implement.
 
