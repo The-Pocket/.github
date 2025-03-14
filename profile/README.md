@@ -8,7 +8,7 @@
   
 - 🫠 Yet, current AI Agents are overwhelmed by **large, complex frameworks**.
 
-- 🔮 Introducing  [**Pocket Flow**](https://github.com/The-Pocket/PocketFlow): a minimal, 100-line framework supporting core AI patterns—batched workflows, multi-agent orchestration, and retrieval-augmented generation—so AI assistants can build on it with ease.
+- 🔮 Introducing  [**Pocket Flow**](https://github.com/The-Pocket/PocketFlow): a minimal, 100-line framework supporting core AI patterns—batched workflows, multi-agent orchestration, and retrieval-augmented generation—so AI Agents can build on it with ease.
     
 ✨ Below are examples of LLM projects built with Pocket Flow:
 
