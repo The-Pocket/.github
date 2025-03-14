@@ -4,9 +4,9 @@
 
 - 🧙 **AI systems**—where multiple AI components work together to solve complex tasks—are crucial for enterprise automation.
   
-- 🌈 We envision a future of **Human-AI co-design**: humans clarify objectives, while AI helps build solutions.
+- 🌈 We envision a future of **Agentic Coding**: Humans design, while AI Agents code.
   
-- 🫠 Yet, current AI assistants are overwhelmed by **large, complex frameworks**.
+- 🫠 Yet, current AI Agents are overwhelmed by **large, complex frameworks**.
 
 - 🔮 Introducing  [**Pocket Flow**](https://github.com/The-Pocket/PocketFlow): a minimal, 100-line framework supporting core AI patterns—batched workflows, multi-agent orchestration, and retrieval-augmented generation—so AI assistants can build on it with ease.
     
