@@ -29,7 +29,7 @@ We use *graph* as the *computation model*. Each node represents a logical unit o
 - **Flow:** A subgraph that coordinates nodes to accomplish a larger task.
 - **Direction:** Edges are directed, indicating the flow of data or decisions (e.g., for agentic decisions).
 
-Nodes in PocketFlow can also be: (1) **Nested:** One flow can be embedded in another, supporting hierarchical composition of logic. (2) **Batch:** Nodes can process multiple items in bulk. (3) **Async:** Tasks may run in parallel, pausing or waiting as needed.
+Nodes in PocketFlow can also be: (1) **Nested:** One flow can be embedded in another, supporting hierarchical composition of logic. (2) **Batched:** Nodes can process multiple items in bulk. (3) **Async:** Tasks may run in parallel, pausing or waiting as needed.
 
 ### Why not use agent as the computation model?
 
