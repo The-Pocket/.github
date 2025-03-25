@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/The-Pocket/PocketFlow/blob/main/assets/title.png?raw=true" width="600"/>
+  <img src="https://github.com/The-Pocket/.github/blob/main/assets/title.png?raw=true" width="600"/>
 </div>
 
 - 🧙 **AI systems**—where multiple AI components work together to solve complex tasks—are crucial for enterprise automation.
