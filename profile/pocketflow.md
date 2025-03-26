@@ -100,3 +100,17 @@ While *message passing* can be simple for smaller systems, it becomes cumbersome
 PocketFlow does not include modules that target particular vendors or use cases. While this may seem to forgo certain benefits of *information hiding*, it keeps the framework *minimal* and avoids shifting dependencies. Modern LLM systems often require integrating various APIs (for LLM calls or tool usage), which are challenging to maintain in a single framework.
 
 From our perspective, the job of handling vendor-specific details is best left to AI assistants that can retrieve up-to-date documentation and assemble relevant code on the fly. **PocketFlow remains a lightweight core, while an AI assistant—like Cursor AI—provides tailored integrations for specific business or application needs.**
+
+## Other Q&A
+
+**Why introduce a Flow abstraction if Nodes already manage their successors locally?**
+
+- **Flows as Nodes:** Flows encapsulate complex operations as reusable nodes. For instance, consider a flow handling natural language database queries: internally, it comprises multiple nodes for text-to-SQL conversion, database connections, SQL execution, and debugging. Each operation is simply a node within a larger flow, enabling batch execution, parallelism, asynchronous operations, and chaining with other flows.
+  
+- **Avoiding Recursive Call Stacks:** Relying solely on nodes managing successors can result in deep recursive call stacks, especially problematic in large flows involving loops or batch processing. Flows orchestrate node execution, ensuring scalable and stack-safe computations.
+
+**Is a Batch Node fundamental to PocketFlow?**
+
+No. Batch nodes aren't fundamental; you can implement batch behavior using a standard node with a self-loop and tracking state via the shared store. However, batching is a frequent and practical pattern, and providing dedicated batch nodes significantly improves developer experience.
+
+
